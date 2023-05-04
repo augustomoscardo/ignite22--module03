@@ -6,15 +6,6 @@ import { dateFormatter, priceFormatter } from "../../utils/formtatter";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
 
-interface Transaction {
-  id: string
-  description: string
-  type: 'income' | 'outcome'
-  price: number
-  category: string
-  createdAt: string
-}
-
 export function Transactions() {
   const { transactions } = useContext(TransactionsContext)
 
